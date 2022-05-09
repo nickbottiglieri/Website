@@ -10,11 +10,17 @@ permalink: /index.html
 -->
 <html>
 	<head>
-		<title>Spectral by HTML5 UP</title>
+		<title>{{ site.title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="code icon" type="image/x-icon" href="../images/code-favicon.ico" />
 		<link rel="stylesheet" href="../styles/home.css" />
+        <link rel="stylesheet" href="../styles/resume.css" />
         <script src="https://kit.fontawesome.com/e096740e61.js" crossorigin="anonymous"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 		<noscript><link rel="stylesheet" href="../styles/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
@@ -24,7 +30,8 @@ permalink: /index.html
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">{{site.title}}</a></h1>
+
+						<h1><a href="index.html">{{ site.title }}</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -52,48 +59,84 @@ permalink: /index.html
 								<li><a href="#" class="button primary">Activate</a></li>
 							</ul>
 						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
+						<a href="#about" class="more scrolly">About</a>
 					</section>
 
 				<!-- One -->
-					<section id="one" class="wrapper style1 special">
+					<section id="about" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>I am a Full Stack Software Developer<br />
+								based out of Washington D.C.</h2>
+                                <p id="experience"></p>
 							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
+                            <p>
+                                My major focus is working on a challenging project that I can be passionate about, writing clean,
+                                scalable code. I'm comfortable with most web developement environments. My strong 
+                                points are most front-end and back-end frameworks. My weak points, for now, are any sort of dev ops / aws. 
+                            </p>
 						</div>
 					</section>
 
 				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="../images/coding-joke.jpeg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="../images/washington-dc.jpeg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
+					<section id="resume" class="wrapper alt style2">
 						<section class="spotlight">
 							<div class="image"><img src="../images/maryland.jpeg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<!--EDUCATION DESCRIPTION -->
+                                <div class="container desc resume-text-style">
+                                    <div class="row">
+                                      <div class="col-lg-2 col-lg-offset-1">
+                                        <h5>EDUCATION</h5>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <p>
+                                          <t>B.S. in Computer Science</t><br/> University of Maryland <br/>
+                                          <i>at College Park</i>
+                                        </p>
+                                      </div>
+                                      <div class="col-lg-3">
+                                        <p>
+                                          <md>May 2021</md><br/>
+                                        </p>
+                                      </div>                              
+                                    </div>
+                                </div>
 							</div>
+						</section>
+						<section class="">
+                            <div class="container desc">
+                                <div class="row work">
+                                  <div class="col-lg-6">
+                                    <p>
+                                      <t>Booz Allen Hamilton</t><br>
+                                      <i class="work-text">August 2021 - Present</i>
+                                    </p>
+                                  </div>
+                                  <div class="work-description">
+                                    <t>Software Engineer</t>
+                                    <p class="work-text">
+                                        Created an executive view module from scratch - planned, analyzed, and created new tasks, developed code, and managed newer developers’ work on a small team.
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-2">
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <p>
+                                      <t>SightGain</t><br>
+                                      <i class="work-text">Summer 2019 & 2020</i>
+                                    </p>
+                                  </div>
+                                  <div class="work-description">
+                                    <t>Software Developer Internship</t>
+                                    <p class="work-text">
+                                        Collaborated with a small team of developers to add updates to the applications in a fast-paced startup environment.
+                                    </p>
+                                  </div>                              
+                                </div>
+                            </div>
+						</section>
+						<section>
+							<div id="highchart" style="width:100%; height:35%;"></div>
 						</section>
 					</section>
 
@@ -150,15 +193,16 @@ permalink: /index.html
 
 				<!-- Footer -->
 					<footer id="footer">
+                        <blockquote class="footer-quote">
+                            “If you only do what you can do, you will never be more than who you are.”<br>
+                            ― Master Shifu
+                        </blockquote>
 						<ul class="icons">
-							<li><a href="/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="/" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="/" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://github.com/nickbottiglieri/" target="_blank" class="icon brands fa-github" onclick="github()"><span class="label">Github</span></a></li>
+							<li><a href="mailto:nicholas.bottiglieri@gmail.com?subject=Hello!&body=" target="_blank" class="icon solid fa-envelope" onclick="email()"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Untitled</li><li>Design: <a href="/">Nick Bottiglieri</a></li>
 						</ul>
 					</footer>
 
@@ -172,6 +216,7 @@ permalink: /index.html
 			<script src="../scripts/js/breakpoints.min.js"></script>
 			<script src="../scripts/js/util.js"></script>
 			<script src="../scripts/js/main.js"></script>
-            <script src="../scripts/js/test.js"></script>
+            <script src="../scripts/js/date-calcs.js"></script>
+            <script src="../scripts/js/highcharts.js"></script>
 	</body>
 </html>

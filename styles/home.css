@@ -6,6 +6,29 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.footer-quote {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.work-container {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.work-text {
+	color: #9099a0;
+}
+
+.work-description {
+	width: 75%;
+}
+
+.row.work {
+	margin-top: 2em;
+	margin-left: 3em;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2816,8 +2839,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
-			color: #c8ece9;
+			background-color: #2b6777;
+			color: #ffffff;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2849,7 +2872,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: #c8d8e4;
 			}
 
 			.wrapper.style1 label {
