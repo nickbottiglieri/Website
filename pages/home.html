@@ -3,11 +3,7 @@ permalink: /index.html
 ---
 
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>{{ site.title }}</title>
@@ -15,13 +11,7 @@ permalink: /index.html
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="code icon" type="image/x-icon" href="../images/code-favicon.ico" />
 		<link rel="stylesheet" href="../styles/home.css" />
-        <link rel="stylesheet" href="../styles/resume.css" />
         <script src="https://kit.fontawesome.com/e096740e61.js" crossorigin="anonymous"></script>
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script src="https://code.highcharts.com/highcharts-more.js"></script>
-        <script src="https://code.highcharts.com/modules/exporting.js"></script>
-        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-		<noscript><link rel="stylesheet" href="../styles/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
 
@@ -30,150 +20,209 @@ permalink: /index.html
 
 				<!-- Header -->
 					<header id="header" class="alt">
-
-						<h1><a href="index.html">{{ site.title }}</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="/">Home</a></li>
-											<li><a href="/about">About</a></li>
-											<li><a href="/resume">Resume</a></li>
-											<li><a href="/">Contact Me</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
+						<h1><a href="#banner" class="more scrolly">{{ site.title }}</a></h1>
 					</header>
 
-				<!-- Banner -->
+				<!-- Home -->
 					<section id="banner">
 						<div class="inner">
-							<h2>{{ site.title }}</h2>
-							<p> Full Stack Developer - 
-                                <a href="/about/">Nick Bottiglieri</a>.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button primary">Activate</a></li>
-							</ul>
-						</div>
+                            <div class="image-container">
+                                <img class="image" src="../images/profile.JPEG" alt="">
+                                <ul class="icons">
+                                    <li><a class="icon brands fa-github" onclick="github()"><span class="label">Github</span></a></li>
+                                    <li><a class="icon brands fa-linkedin" onclick="linkedIn()"><span class="label">LinkedIn</span></a></li>
+                                    <li><a href="mailto:nicholas.bottiglieri@gmail.com?subject=Hello!&body=" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                                </ul>
+                            </div>
+							<p>Hey, I'm </p>
+                            <h2>{{ site.title }}</h2>
+							<p>
+                                Software Engineer<br />
+								based out of Washington D.C.
+                            </p>
+        						</div>
 						<a href="#about" class="more scrolly">About</a>
 					</section>
 
-				<!-- One -->
+				<!-- Intro -->
 					<section id="about" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>I am a Full Stack Software Developer<br />
-								based out of Washington D.C.</h2>
-                                <p id="experience"></p>
+								<h2>My Mission</h2>
 							</header>
                             <p>
                                 My major focus is working on a challenging project that I can be passionate about, writing clean,
-                                scalable code. I'm comfortable with most web developement environments. My strong 
-                                points are most front-end and back-end frameworks. My weak points, for now, are any sort of dev ops / aws. 
+                                scalable code. I'm a great collaborator and love to solve problems with smart people!
                             </p>
 						</div>
 					</section>
 
-				<!-- Two -->
-					<section id="resume" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="../images/maryland.jpeg" alt="" /></div><div class="content">
-								<!--EDUCATION DESCRIPTION -->
-                                <div class="container desc resume-text-style">
-                                    <div class="row">
-                                      <div class="col-lg-2 col-lg-offset-1">
-                                        <h5>EDUCATION</h5>
-                                      </div>
-                                      <div class="col-lg-6">
-                                        <p>
-                                          <t>B.S. in Computer Science</t><br/> University of Maryland <br/>
-                                          <i>at College Park</i>
-                                        </p>
-                                      </div>
-                                      <div class="col-lg-3">
-                                        <p>
-                                          <md>May 2021</md><br/>
-                                        </p>
-                                      </div>                              
+                <!-- Journey -->
+                    <section id="three" class="journey">
+						<header class="major journey-header">
+                            <div class="short-long-container">
+                                <a id="long" class="button primary small">Long</a>
+                                <a id="short" class="button small">Short</a>
+                            </div>
+                            <h2>My Journey</h2>
+                        </header>
+
+                        <div class="journey-info">
+                            <div>
+                                <div class="image-container">
+                                    <img class="image" src="../images/boozallen.jpeg" alt="">
+                                </div>
+                                <div class="text-container">
+                                    <h3>
+                                        <a class="journey-header journey-job-header" href="https://www.boozallen.com" target="_blank">Booz Allen Hamilton</a>
+                                    </h3>
+                                    <strong class="journey-secondary">Software Engineer, since August 2021</strong>
+                                    <div class="journey-text">
+                                        <strong>Arlington, VA</strong>
+                                        <div class="longText">
+                                            <p></p>
+                                            <p>Joining Booz was my first opportunity to work on a large scale project with a seasoned codebase and large number of co-workers to colaborate with. I had worked with Air Force clients in the past, but this job was completely different.</p>
+                                            <p>Why?</p>
+                                            <p>At SightGain, I had been a part of each step of the software developement cycle and now my focus was solely on developing maintainable and robust code. I've learned a lot, communicating with senior devs and figuring out best practices. This is a great job to start my journey.</p>
+                                        </div>
+                                        <div class="shortText" hidden>
+                                            <p></p>
+                                            <p>Joining Booz was my first opportunity to work on a large scale project with a seasoned codebase and large number of co-workers to colaborate with. I had worked with Air Force clients in the past, but this job was completely different.</p>
+                                        </div>
                                     </div>
                                 </div>
-							</div>
-						</section>
-						<section class="">
-                            <div class="container desc">
-                                <div class="row work">
-                                  <div class="col-lg-6">
-                                    <p>
-                                      <t>Booz Allen Hamilton</t><br>
-                                      <i class="work-text">August 2021 - Present</i>
-                                    </p>
-                                  </div>
-                                  <div class="work-description">
-                                    <t>Software Engineer</t>
-                                    <p class="work-text">
-                                        Created an executive view module from scratch - planned, analyzed, and created new tasks, developed code, and managed newer developers’ work on a small team.
-                                    </p>
-                                  </div>
-                                  <div class="col-lg-2">
-                                  </div>
-                                  <div class="col-lg-6">
-                                    <p>
-                                      <t>SightGain</t><br>
-                                      <i class="work-text">Summer 2019 & 2020</i>
-                                    </p>
-                                  </div>
-                                  <div class="work-description">
-                                    <t>Software Developer Internship</t>
-                                    <p class="work-text">
-                                        Collaborated with a small team of developers to add updates to the applications in a fast-paced startup environment.
-                                    </p>
-                                  </div>                              
+                            </div>
+
+                            <div>
+                                <div class="image-container">
+                                    <img class="image" src="../images/sightgain.jpeg" alt="">
+                                </div>
+                                <div class="text-container">
+                                    <h3>
+                                        <a class="journey-header journey-job-header" href="https://sightgain.com/" target="_blank">SightGain</a>
+                                    </h3>
+                                    <strong class="journey-secondary">Software Developer Internship, Summer 2019 & 2020</strong>
+                                    <div class="journey-text">
+                                        <strong>Tysons, VA</strong>
+                                        <div class="longText">
+                                            <p></p>
+                                            <p>
+                                                As a sophomore in college, SightGain really took a chance on me. I was still learning the foundational 
+                                                computer science principles and had a chance to work for the first time on a full stack web application.
+                                            </p>
+                                            <p>
+                                                I learned NodeJS, Express, React, JavaScript, HTML, CSS and the basics of how a web application works 
+                                                before I became a Junior in college.
+                                            </p>
+                                            <p>
+                                                When I came back after Junior year, I was truly ready to step up and make a difference on the team.
+                                                During my Junior year of college & during this internship I felt like a real developer for the first time. 
+                                                I felt like I understood and could work on any task from the database to the html.
+                                            </p>
+                                            <p>
+                                                Working at a face paced startup was extemely exciting, waking up every morning with the opportunity to solve a new problem.
+                                                Sometimes I had no idea what the day had in store for me, which can be incredibly fun. I traveled onsite to Andrew's Air Force
+                                                Base to gather requirements, watching how the end user interacted with the app we had been creating, and noting improvements to make.
+                                                SightGain was a perfect introduction to the entire software developement process from the ground up and I'm thankful for my small 
+                                                team of knowledgeable mentors.
+                                            </p>
+                                        </div>
+                                        <div class="shortText" hidden>
+                                            <p></p>
+                                            <p>
+                                                As a sophomore in college, SightGain really took a chance on me. I was still learning the foundational 
+                                                computer science principles and had a chance to work for the first time on a full stack web application.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-						</section>
-						<section>
-							<div id="highchart" style="width:100%; height:35%;"></div>
-						</section>
+
+                            <div>
+                                <div class="image-container">
+                                    <img class="image" src="../images/univ-maryland.webp" alt="">
+                                </div>
+                                <div class="text-container">
+                                    <h3>
+                                        <a class="journey-header journey-job-header" href="https://www.umd.edu/" target="_blank">University of Maryland</a>
+                                    </h3>
+                                    <strong class="journey-secondary">B.S. in Computer Science, earned May 2021</strong>
+                                    <div class="journey-text">
+                                        <strong>College Park, MD</strong>
+                                        <div class="longText">
+                                            <p></p>
+                                            <p>My 4 years at Maryland was filled with fantastic and challenging professors, pushing me to improve in nearly every computer science class.</p>
+                                            <p>
+                                                However, the students - my friends - are the ones who I think taught me the most. 
+                                                Collaborating on homeworks, projects, exams (just kidding) enabled me to fully comprehend the 
+                                                difficult problems, algorithms, and computer science ideas that we learned. I remember group sessions lasting 
+                                                all day - 12 hours or more sometimes - to finish implementing an EM algorithm for our 422 (machine learning) class.
+                                                or a convolutional neural network in 426 (computer vision) that can identify people at a crosswalk. These are the kind of
+                                                projects that kept me motivated and eager to pursue greater things.
+                                            </p>
+                                            <p>Maryland gifted me with a love for learning and taught me what I love to do. I will always be grateful.</p>
+                                        </div>
+                                        <div class="shortText" hidden>
+                                            <p></p>
+                                            <p>My 4 years at Maryland was filled with fantastic and challenging professors, pushing me to improve in nearly every computer science class.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="actions special">
+                                <li>
+                                    <a href="../images/nick_bottiglieri_resume.pdf" download class="button primary">
+                                        Resume
+                                        <i class="fa-solid fa-download"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 					</section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
+                <!-- System -->
+					<section id="system" class="wrapper style2 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>My System</h2>
 							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-headphones-alt">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
+                            <ul class="alt system-items">
+                                <li>
+                                    <a target="_blank" href="https://workhardplayharder.blog/massive-action-is-important/">
+                                        Take action
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://yoursoulpurpose.co/blogs/wysp-blog/8-reasons-to-choose-passion-over-money">
+                                        Passion over money
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://raywilliams.ca/need-humble-self-aware-leaders-ever/">
+                                        Humble, Self-Awareness
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.harvardbusiness.org/the-importance-of-being-curious/">
+                                        Be Curious
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.cnbc.com/2017/10/05/why-should-you-be-highly-optimistic-if-you-want-to-be-successful.html">
+                                        Look on the bright side
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.toledolibrary.org/blog/5-reasons-to-read-everyday">
+                                        Read every day
+                                    </a>
+                                </li>
+                            </ul>
+                            <blockquote class="footer-quote">
+                                “If you only do what you can do, you will never be more than who you are.”<br>
+                                ― Master Shifu
+                            </blockquote>
 						</div>
 					</section>
 
@@ -193,16 +242,14 @@ permalink: /index.html
 
 				<!-- Footer -->
 					<footer id="footer">
-                        <blockquote class="footer-quote">
-                            “If you only do what you can do, you will never be more than who you are.”<br>
-                            ― Master Shifu
-                        </blockquote>
+                        <p id="experience" class="work-text"></p>
 						<ul class="icons">
-							<li><a href="https://github.com/nickbottiglieri/" target="_blank" class="icon brands fa-github" onclick="github()"><span class="label">Github</span></a></li>
-							<li><a href="mailto:nicholas.bottiglieri@gmail.com?subject=Hello!&body=" target="_blank" class="icon solid fa-envelope" onclick="email()"><span class="label">Email</span></a></li>
+							<li><a class="icon brands fa-github" onclick="github()"><span class="label">Github</span></a></li>
+                            <li><a class="icon brands fa-linkedin" onclick="linkedIn()"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:nicholas.bottiglieri@gmail.com?subject=Hello!&body=" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="/">Nick Bottiglieri</a></li>
+							<li>&copy; 2022 Bottiglieri</li><li>Design: <a href="/">Nick Bottiglieri</a></li>
 						</ul>
 					</footer>
 
@@ -217,6 +264,6 @@ permalink: /index.html
 			<script src="../scripts/js/util.js"></script>
 			<script src="../scripts/js/main.js"></script>
             <script src="../scripts/js/date-calcs.js"></script>
-            <script src="../scripts/js/highcharts.js"></script>
+            <script src="../scripts/js/icon-functions.js"></script>
 	</body>
 </html>

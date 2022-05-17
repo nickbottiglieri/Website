@@ -80,4 +80,45 @@
 
 		}
 
+	//Buttons - long and short text.
+	const short = document.getElementById('short');
+	const long = document.getElementById('long');
+
+	short.addEventListener('click', () => {
+		long.classList.remove('primary')
+		short.classList.add('primary');
+
+		showShortText();
+	});
+
+	long.addEventListener('click', () => {
+		short.classList.remove('primary')
+		long.classList.add('primary');
+
+		showLongText();
+	});
+
+	
+	const longText = document.getElementsByClassName('longText');
+	const shortText = document.getElementsByClassName('shortText');
+
+	const showLongText = () => {
+		for (let i = 0; i < longText.length; i++) {
+			longText.item(i).style.display = 'block';
+		 }
+
+		for (let i = 0; i < shortText.length; i++) {
+			shortText.item(i).style.display = 'none';
+		 }
+	}
+
+	const showShortText = () => {
+		for (let i = 0; i < shortText.length; i++) {
+			shortText.item(i).style.display = 'block';
+		 }
+
+		for (let i = 0; i < longText.length; i++) {
+			longText.item(i).style.display = 'none';
+		 }
+	}
 })(jQuery);

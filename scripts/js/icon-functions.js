@@ -1,7 +1,7 @@
 function github() {
-    window.open('https://github.com/nickbottiglieri/')
+    window.open("https://www.github.com/nickbottiglieri/")
 }
 
-function email() {
-
+function linkedIn() {
+    window.open("https://www.linkedin.com/in/nick-bottiglieri/")
 }

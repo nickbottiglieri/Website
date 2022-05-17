@@ -13,20 +13,20 @@ function timeSince(date) {
 	const days = Math.floor(interval);
 
 	if(days === 0 && months === 0) {
-		return `I have ${years} year${years > 1 ? 's' : ''} of professional experience exactly, as of today.`;
+		return `${years} year${years > 1 ? 's' : ''} of professional experience exactly, as of today.`;
 	}
 
 	if(days === 0 && months !== 0) {
-		return `I have ${years} year${years > 1 ? 's' : ''}, and exactly
+		return `${years} year${years > 1 ? 's' : ''}, and exactly
 				${months} month${months > 1 ? 's' : ''} of professional experience.`;
 	}
 
 	if(days !== 0 && months === 0) {
-		return `I have ${years} year${years > 1 ? 's' : ''}
-				and ${days} day${days > 1 ? 's' : ''} of professional experience.`;
+		return `${years} year${years > 1 ? 's' : ''}
+				and ${days} day${days > 1 ? 's' : ''} of professional experience and counting.`;
 	}
 	
-	return `I have ${years} year${years > 1 ? 's' : ''}, 
+	return `${years} year${years > 1 ? 's' : ''}, 
 			${months} month${months > 1 ? 's' : ''}, 
-			and ${days} day${days > 1 ? 's' : ''} of professional experience.`;
+			and ${days} day${days > 1 ? 's' : ''} of professional experience and counting.`;
   }
