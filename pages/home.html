@@ -19,13 +19,30 @@ permalink: /index.html
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
+					<header id="header" class="">
 						<h1><a href="#banner" class="more scrolly">{{ site.title }}</a></h1>
+                        <div class="link-container">
+                            <a id="about-link" href="#about" class="more scrolly">Mission</a>
+
+                            <a id="journey-link" href="#journey" class="more scrolly">Journey</a>
+
+                            <a id="system-link" href="#system" class="more scrolly">System</a>
+
+                            <a id="contact-link" href="#contact" class="more scrolly">Contact</a>
+                        </div>
+                        <div class="light-dark-toggles">
+                            <div id="dark-mode">
+                                <i class="fa-solid fa-moon fa-xl dark-mode"></i>
+                            </div>
+                            <div id="light-mode" hidden>
+                                <i class="fa-solid fa-sun fa-xl light-mode"></i>
+                            </div>
+                        </div>
 					</header>
 
 				<!-- Home -->
 					<section id="banner">
-						<div class="inner">
+						<div class="inner">        
                             <div class="image-container">
                                 <img class="image" src="../images/profile.JPEG" alt="">
                                 <ul class="icons">
@@ -37,8 +54,7 @@ permalink: /index.html
 							<p>Hey, I'm </p>
                             <h2>{{ site.title }}</h2>
 							<p>
-                                Software Engineer<br />
-								based out of Washington D.C.
+                                Software Engineer
                             </p>
         						</div>
 						<a href="#about" class="more scrolly">About</a>
@@ -58,13 +74,20 @@ permalink: /index.html
 					</section>
 
                 <!-- Journey -->
-                    <section id="three" class="journey">
+                    <section id="journey" class="journey">
 						<header class="major journey-header">
-                            <div class="short-long-container">
-                                <a id="long" class="button primary small">Long</a>
-                                <a id="short" class="button small">Short</a>
-                            </div>
                             <h2>My Journey</h2>
+                            <div>
+                                <div class="short-long-container">
+                                    <a id="long" class="active">Long</a>
+                                    <a id="short" class="">Short</a>
+                                    <span class="vertical-line"></span>
+                                    <a href="../images/nick_bottiglieri_resume.pdf" download class="text-link">
+                                        Resume
+                                        <i class="fa-solid fa-download"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </header>
 
                         <div class="journey-info">
@@ -156,7 +179,8 @@ permalink: /index.html
                                                 However, the students - my friends - are the ones who I think taught me the most. 
                                                 Collaborating on homeworks, projects, exams (just kidding) enabled me to fully comprehend the 
                                                 difficult problems, algorithms, and computer science ideas that we learned. I remember group sessions lasting 
-                                                all day - 12 hours or more sometimes - to finish implementing an EM algorithm for our 422 (machine learning) class.
+                                                all day - 12 hours or more sometimes - to finish implementing an 
+                                                <a target="_blank" href="https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm" class="text-link">EM algorithm</a> for our 422 (machine learning) class.
                                                 or a convolutional neural network in 426 (computer vision) that can identify people at a crosswalk. These are the kind of
                                                 projects that kept me motivated and eager to pursue greater things.
                                             </p>
@@ -169,15 +193,6 @@ permalink: /index.html
                                     </div>
                                 </div>
                             </div>
-
-                            <ul class="actions special">
-                                <li>
-                                    <a href="../images/nick_bottiglieri_resume.pdf" download class="button primary">
-                                        Resume
-                                        <i class="fa-solid fa-download"></i>
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
 					</section>
 
@@ -226,17 +241,18 @@ permalink: /index.html
 						</div>
 					</section>
 
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
+				<!-- Closing -->
+					<section id="contact" class="wrapper style4">
 						<div class="inner">
 							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+								<h2>
+                                    I'm based out of Washington, D.C. and would love to 
+                                    <a target="_blank" href="mailto:nicholas.bottiglieri@gmail.com?subject=Hello!&body=">
+                                        connect
+                                    </a> 
+                                    with you.
+                                </h2>
 							</header>
-							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul>
 						</div>
 					</section>
 

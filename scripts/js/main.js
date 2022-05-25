@@ -1,9 +1,3 @@
-/*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	var	$window = $(window),
@@ -46,7 +40,7 @@
 	// Scrolly.
 		$('.scrolly')
 			.scrolly({
-				speed: 1500,
+				speed: 750,
 				offset: $header.outerHeight()
 			});
 
@@ -85,15 +79,15 @@
 	const long = document.getElementById('long');
 
 	short.addEventListener('click', () => {
-		long.classList.remove('primary')
-		short.classList.add('primary');
+		long.classList.remove('active')
+		short.classList.add('active');
 
 		showShortText();
 	});
 
 	long.addEventListener('click', () => {
-		short.classList.remove('primary')
-		long.classList.add('primary');
+		short.classList.remove('active')
+		long.classList.add('active');
 
 		showLongText();
 	});
@@ -121,4 +115,76 @@
 			longText.item(i).style.display = 'none';
 		 }
 	}
+
+	//Dark and light mode functionality.
+	const showLightTheme = () => {
+		dark.style.display = 'none';
+		light.style.display = 'block';
+	}
+
+	const showDarkTheme = () => {
+		light.style.display = 'none';
+		dark.style.display = 'block';
+	}
+
+	const toggleDarkTheme = () => {
+		document.body.classList.toggle("dark-theme");
+		saveTheme('dark');
+	}
+
+	const toggleLightTheme = () => {
+		document.body.classList.toggle("dark-theme");
+		saveTheme('light')
+	}
+
+	const saveTheme = (theme) => {
+		localStorage.setItem("theme", theme);
+	}
+
+	let dark = document.getElementById('dark-mode');
+	let light = document.getElementById('light-mode');
+
+	const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+	const currentTheme = localStorage.getItem("theme");
+
+	if (currentTheme === "dark" || (!currentTheme && prefersDarkScheme.matches)) {
+		toggleDarkTheme();
+		showLightTheme();
+	}
+
+	dark.addEventListener('click', () => {
+		showLightTheme();
+		toggleDarkTheme();
+	});
+
+	light.addEventListener('click', () => {
+		showDarkTheme();
+		toggleLightTheme();
+	});
+
+	//Menu bar active section
+
+	const sections = document.querySelectorAll("section")
+	
+	const options = {
+	  rootMargin: '-400px',
+	  threshold: 0
+	}
+	
+	let observer = new IntersectionObserver(entries => {
+	  entries.forEach(entry => {
+		let el = document.getElementById(entry.target.id + '-link');
+		if (el) {
+			if (entry.intersectionRatio > 0) {
+				el.classList.add('active');
+			} else {
+				el.classList.remove('active');
+			}
+		}
+	  })
+	}, options)
+	
+	sections.forEach(section => { 
+	  observer.observe(section)
+	})
 })(jQuery);
